@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */ 
+*{
+  background: #0c3a2f;
+  ;
+}
