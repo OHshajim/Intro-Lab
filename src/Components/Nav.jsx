@@ -1,4 +1,4 @@
-const Page = () => {
+const Nav = () => {
     return (
         <div>
             
@@ -6,4 +6,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Nav;

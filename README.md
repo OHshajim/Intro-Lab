@@ -34,18 +34,18 @@ Follow these steps to clone and run the project locally:
 
 2. **Navigate to the project folder**:
 
-```bash
-cd introduction-lab
-```
+    ```bash
+    cd introduction-lab
+    ```
 
 3. **Install dependencies**:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 4. **Running the Project**:
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
