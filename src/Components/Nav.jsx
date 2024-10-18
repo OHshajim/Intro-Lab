@@ -33,7 +33,7 @@ const Nav = () => {
     },
   ];
   return (
-    <div className="absolute top-4 right-4  bg-transparent">
+    <div className=" top-4 right-4  bg-transparent fixed">
       {/* Checking part */}
       <label className="btn btn-circle overflow-hidden hover:bg-[#f9d3de] swap swap-rotate bg-[#f9d3de]">
         <input
