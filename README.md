@@ -2,9 +2,11 @@
 
 ---
 
+## Live Link : https://celadon-entremet-805b59.netlify.app/
+
 ## Overview
 
-**Introduction Lab** is a reverse-engineering project designed to replicate the smooth scroll-based animation from the [2019 IAD Lab website](https://2019.iad-lab.ch/). The focus is on animation, where images and pop-up text appear as the user scrolls through the page. The design uses placeholder images and text, with attention to responsive and fluid animation.
+**Introduction Lab** is a reverse-engineering project designed to replicate the smooth scroll-based animation from the [2019 IAD Lab website](https://2019.iad-lab.ch/). The focus is on animation, where images and pop-up text appear as the user scrolls through the page. The design uses placeholder images and text, with attention to responsive for all devices.
 
 ## Technologies and packages
 
