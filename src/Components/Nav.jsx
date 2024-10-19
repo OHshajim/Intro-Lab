@@ -55,7 +55,20 @@ const Nav = ({ setData }) => {
 
       {/*  Navigation  part*/}
       <nav className={isChecked ? "flex" : "hidden"}>
-        <ul className=" flex flex-row gap-4 absolute right-16 top-2 bg-transparent">
+        <ul className="hidden flex-row gap-4 absolute right-16 top-2 bg-transparent md:flex">
+          {list.map((nav) => (
+            <li key={nav.name} className="bg-transparent">
+              <a
+                href={nav.path}
+                onClick={() => HandleDataSelect(nav.name)}
+                className="px-8 py-[10px] text-sm rounded-3xl bg-[#f9d3de] hover:bg-white text-black font-bold duration-300"
+              >
+                {nav.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <ul className="flex flex-col items-center gap-7 absolute right-4 top-16 bg-transparent md:hidden">
           {list.map((nav) => (
             <li key={nav.name} className="bg-transparent">
               <a

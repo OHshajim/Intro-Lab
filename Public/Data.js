@@ -123,4 +123,16 @@ export const Data = [
     image:
       "https://atnoyualen.cloudimg.io/width/500/webp/https://2019.iad-lab.ch/uploads/Iad-lab_moodbild-1.jpg",
   },
+  {
+    name: "Rückblick",
+    title: "Additional",
+    subtitle: "",
+    description: `IAD LAB 2017 - «UX ≠ Mittelmass»
+
+IAD Talk 2016/2017 - «Design Talks»
+
+IAD LAB 2015 - «Design vs. Technology»`,
+    image:
+      "https://atnoyualen.cloudimg.io/width/500/webp/https://2019.iad-lab.ch/uploads/Iad-lab_moodbild-8.jpg",
+  },
 ];
