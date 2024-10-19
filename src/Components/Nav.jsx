@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
+import { Data } from "../../Public/Data";
 
-const Nav = () => {
+const Nav = ({ setData }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = (e) => {
     setIsChecked(e.target.checked);
-    console.log(e.target.checked); // This will log `true` when checked, `false` when unchecked
   };
 
   const list = [
@@ -16,8 +16,8 @@ const Nav = () => {
       path: "#About",
     },
     {
-      name: "Speakers",
-      path: "#Speakers",
+      name: "Speaker",
+      path: "#Speaker",
     },
     {
       name: "Program",
@@ -32,6 +32,12 @@ const Nav = () => {
       path: "#Additional",
     },
   ];
+  const HandleDataSelect = (name) => {
+    const data = Data.find((data) => data?.title == name);
+    console.log(data);
+
+    setData(data);
+  };
   return (
     <div className="z-50 top-4 right-4  bg-transparent fixed">
       {/* Checking part */}
@@ -54,9 +60,10 @@ const Nav = () => {
             <li key={nav.name} className="bg-transparent">
               <a
                 href={nav.path}
+                onClick={() => HandleDataSelect(nav.name)}
                 className="px-8 py-[10px] text-sm rounded-3xl bg-[#f9d3de] hover:bg-white text-black font-bold duration-300"
               >
-                {nav.name} 
+                {nav.name}
               </a>
             </li>
           ))}
