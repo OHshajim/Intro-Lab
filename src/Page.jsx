@@ -1,4 +1,5 @@
 import Nav from "./Components/Nav";
+import Structure from "./Components/Structure";
 import Title from "./Components/Title";
 
 const Page = () => {
@@ -6,15 +7,8 @@ const Page = () => {
     <div className="min-h-screen">
       <Nav />
       <Title />
-      <div className=" h-96 text-4xl">
-        Hello
-      </div>
-      <div className=" h-96">
-        Hello
-      </div>
-      <div className=" h-96">
-        Hello
-      </div>
+      <div className=" h-[50vh]"></div>
+      <Structure />
     </div>
   );
 };

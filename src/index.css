@@ -3,8 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS */ 
-*{
+/* Custom CSS */
+* {
   background: #0c3a2f;
   ;
 }

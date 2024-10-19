@@ -33,9 +33,9 @@ const Nav = () => {
     },
   ];
   return (
-    <div className=" top-4 right-4  bg-transparent fixed">
+    <div className="z-50 top-4 right-4  bg-transparent fixed">
       {/* Checking part */}
-      <label className="btn btn-circle overflow-hidden hover:bg-[#f9d3de] swap swap-rotate bg-[#f9d3de]">
+      <label className="btn rounded-full w-12 border-none overflow-hidden hover:bg-[#f9d3de] animate-bounce swap swap-rotate bg-[#f9d3de]">
         <input
           id="myCheck"
           type="checkbox"
@@ -43,20 +43,20 @@ const Nav = () => {
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        <IoIosMenu className="swap-off fill-current bg-[#f9d3de] text-4xl text-black" />
-        <IoClose className="swap-on fill-current bg-[#f9d3de] text-4xl text-black" />
+        <IoIosMenu className="swap-off fill-current bg-[#f9d3de] text-2xl text-black" />
+        <IoClose className="swap-on fill-current bg-[#f9d3de] text-2xl text-black" />
       </label>
 
       {/*  Navigation  part*/}
       <nav className={isChecked ? "flex" : "hidden"}>
-        <ul className=" flex flex-row gap-4 absolute right-16 top-4 bg-transparent">
+        <ul className=" flex flex-row gap-4 absolute right-16 top-2 bg-transparent">
           {list.map((nav) => (
-            <li key={nav.name}>
+            <li key={nav.name} className="bg-transparent">
               <a
                 href={nav.path}
-                className="px-5 py-3 rounded-3xl bg-[#f9d3de] text-black"
+                className="px-8 py-[10px] text-sm rounded-3xl bg-[#f9d3de] hover:bg-white text-black font-bold duration-300"
               >
-                {nav.name}
+                {nav.name} 
               </a>
             </li>
           ))}
